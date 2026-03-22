@@ -1,63 +1,71 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <div className="relative flex flex-1 items-center justify-center overflow-hidden bg-background px-6 py-16">
+      <div className="pointer-events-none absolute inset-0">
+        <div className="absolute -top-32 left-1/2 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-[radial-gradient(circle_at_center,rgba(99,102,241,0.22),transparent_60%)] blur-2xl" />
+        <div className="absolute -bottom-32 left-1/2 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-[radial-gradient(circle_at_center,rgba(16,185,129,0.18),transparent_60%)] blur-2xl" />
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(0,0,0,0.04)_1px,transparent_1px),linear-gradient(to_bottom,rgba(0,0,0,0.04)_1px,transparent_1px)] bg-[size:48px_48px] opacity-40 dark:opacity-20" />
+      </div>
+
+      <main className="relative w-full max-w-2xl">
+        <div className="rounded-2xl border border-black/10 bg-white/70 p-8 shadow-[0_24px_80px_rgba(0,0,0,0.12)] backdrop-blur-sm dark:border-white/10 dark:bg-black/30">
+          <div className="inline-flex items-center gap-2 rounded-full border border-black/10 bg-black/[0.03] px-3 py-1 text-xs font-medium text-foreground dark:border-white/10 dark:bg-white/[0.06]">
+            <span className="relative flex size-2">
+              <span className="absolute inline-flex size-2 animate-ping rounded-full bg-foreground/60" />
+              <span className="relative inline-flex size-2 rounded-full bg-foreground" />
+            </span>
+            En construcción
+          </div>
+
+          <h1 className="mt-6 text-balance text-4xl font-semibold leading-tight tracking-tight text-foreground sm:text-5xl">
+            Estamos construyendo algo que vale tu tiempo.
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+
+          <p className="mt-4 text-pretty text-base leading-7 text-foreground/75 sm:text-lg">
+            Este sitio está en desarrollo. Muy pronto vas a poder explorar una experiencia más rápida, clara y útil.
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+          <div className="mt-8 grid gap-3 rounded-xl border border-black/10 bg-white/60 p-4 dark:border-white/10 dark:bg-black/20">
+            <div className="flex items-start gap-3">
+              <span className="mt-1 inline-flex size-2 rounded-full bg-foreground/70" />
+              <div className="min-w-0">
+                <p className="font-medium text-foreground">Estamos afinando la base</p>
+                <p className="text-sm leading-6 text-foreground/70">
+                  Diseño, rendimiento y estructura.
+                </p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3">
+              <span className="mt-1 inline-flex size-2 rounded-full bg-foreground/40" />
+              <div className="min-w-0">
+                <p className="font-medium text-foreground">Luego, lo bueno</p>
+                <p className="text-sm leading-6 text-foreground/70">
+                  Funcionalidades y contenido.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+            <a
+              className="inline-flex h-11 items-center justify-center rounded-full bg-foreground px-5 text-sm font-medium text-background shadow-sm transition-colors hover:bg-foreground/90"
+              href="#"
+              aria-label="Volver pronto">
+              Vuelve pronto
+            </a>
+            <a
+              className="inline-flex h-11 items-center justify-center rounded-full border border-black/10 bg-white/60 px-5 text-sm font-medium text-foreground transition-colors hover:bg-white/80 dark:border-white/10 dark:bg-black/20 dark:hover:bg-black/30"
+              href="https://github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ver progreso
+            </a>
+          </div>
+
+          <p className="mt-8 text-xs text-foreground/60">
+            Gracias por tu paciencia. Estamos preparando una primera versión.
+          </p>
         </div>
       </main>
     </div>

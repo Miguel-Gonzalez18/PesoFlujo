@@ -18,8 +18,11 @@
         "name": "next"
       }
     ],
+    "baseUrl": ".", // Importante para que los alias funcionen desde la raíz
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./src/*", "./*"], // Soporta importaciones desde src y raíz del app
+      "@components/*": ["./components/*", "./src/components/*"], // Ajuste a la estructura real
+      "@utils/*": ["./utils/*", "./src/utils/*"] // Compatibilidad dual
     }
   },
   "include": [
