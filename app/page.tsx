@@ -4,12 +4,12 @@ export default function Home() {
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute -top-32 left-1/2 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-[radial-gradient(circle_at_center,rgba(99,102,241,0.22),transparent_60%)] blur-2xl" />
         <div className="absolute -bottom-32 left-1/2 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-[radial-gradient(circle_at_center,rgba(16,185,129,0.18),transparent_60%)] blur-2xl" />
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(0,0,0,0.04)_1px,transparent_1px),linear-gradient(to_bottom,rgba(0,0,0,0.04)_1px,transparent_1px)] bg-[size:48px_48px] opacity-40 dark:opacity-20" />
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(0,0,0,0.04)_1px,transparent_1px),linear-gradient(to_bottom,rgba(0,0,0,0.04)_1px,transparent_1px)] bg-size-[48px_48px] opacity-40 dark:opacity-20" />
       </div>
 
       <main className="relative w-full max-w-2xl">
         <div className="rounded-2xl border border-black/10 bg-white/70 p-8 shadow-[0_24px_80px_rgba(0,0,0,0.12)] backdrop-blur-sm dark:border-white/10 dark:bg-black/30">
-          <div className="inline-flex items-center gap-2 rounded-full border border-black/10 bg-black/[0.03] px-3 py-1 text-xs font-medium text-foreground dark:border-white/10 dark:bg-white/[0.06]">
+          <div className="inline-flex items-center gap-2 rounded-full border border-black/10 bg-black/3 px-3 py-1 text-xs font-medium text-foreground dark:border-white/10 dark:bg-white/6">
             <span className="relative flex size-2">
               <span className="absolute inline-flex size-2 animate-ping rounded-full bg-foreground/60" />
               <span className="relative inline-flex size-2 rounded-full bg-foreground" />
@@ -17,7 +17,7 @@ export default function Home() {
             En construcción
           </div>
 
-          <h1 className="mt-6 text-balance text-4xl font-semibold leading-tight tracking-tight text-foreground sm:text-5xl">
+          <h1 className="mt-6 font-heading text-balance text-4xl font-semibold leading-tight tracking-tight text-foreground sm:text-5xl">
             Estamos construyendo algo que vale tu tiempo.
           </h1>
 
@@ -44,23 +44,6 @@ export default function Home() {
                 </p>
               </div>
             </div>
-          </div>
-
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <a
-              className="inline-flex h-11 items-center justify-center rounded-full bg-foreground px-5 text-sm font-medium text-background shadow-sm transition-colors hover:bg-foreground/90"
-              href="#"
-              aria-label="Volver pronto">
-              Vuelve pronto
-            </a>
-            <a
-              className="inline-flex h-11 items-center justify-center rounded-full border border-black/10 bg-white/60 px-5 text-sm font-medium text-foreground transition-colors hover:bg-white/80 dark:border-white/10 dark:bg-black/20 dark:hover:bg-black/30"
-              href="https://github.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Ver progreso
-            </a>
           </div>
 
           <p className="mt-8 text-xs text-foreground/60">
