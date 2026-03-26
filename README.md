@@ -1,8 +1,8 @@
-# PesoFlujo 💰
+# fluvoo 💰
 
 > **Claridad financiera para cada dominicano.**
 
-PesoFlujo is an AI-powered personal finance assistant built for the Dominican Republic. It helps salaried employees, freelancers, and small business owners understand where their money goes, plan their savings, and make smarter financial decisions — all in one place.
+fluvoo is an AI-powered personal finance assistant built for the Dominican Republic. It helps salaried employees, freelancers, and small business owners understand where their money goes, plan their savings, and make smarter financial decisions — all in one place.
 
 ![Next.js](https://img.shields.io/badge/Next.js-14-black?style=flat-square&logo=next.js)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=flat-square&logo=typescript)
@@ -11,9 +11,9 @@ PesoFlujo is an AI-powered personal finance assistant built for the Dominican Re
 
 ---
 
-## What is PesoFlujo?
+## What is fluvoo?
 
-Most personal finance apps are designed for the US or European markets. PesoFlujo is built from the ground up for the Dominican reality: peso-denominated accounts, TSS/SFS/SIPEN deductions, DGII tax obligations, ARS health insurance, and the mix of formal and informal income that's common across the country.
+Most personal finance apps are designed for the US or European markets. fluvoo is built from the ground up for the Dominican reality: peso-denominated accounts, TSS/SFS/SIPEN deductions, DGII tax obligations, ARS health insurance, and the mix of formal and informal income that's common across the country.
 
 The app connects to your bank notifications through Gmail (read-only, with your explicit permission), automatically detects and categorizes your transactions, and uses AI to give you a plain-language summary of your financial health every month. It also includes a suite of local financial calculators and a savings assistant that builds personalized plans based on your actual income and expenses.
 
@@ -21,7 +21,7 @@ The app connects to your bank notifications through Gmail (read-only, with your 
 
 ## Features
 
-**Automatic transaction detection.** Connect your Gmail and PesoFlujo reads the notification emails your bank already sends you — without ever accessing your bank account or storing any credentials.
+**Automatic transaction detection.** Connect your Gmail and fluvoo reads the notification emails your bank already sends you — without ever accessing your bank account or storing any credentials.
 
 **AI financial analysis.** Get a monthly summary of your finances written in plain Spanish, with observations about your spending patterns and suggestions you can act on.
 
@@ -37,7 +37,7 @@ The app connects to your bank notifications through Gmail (read-only, with your 
 
 ## Tech Stack
 
-PesoFlujo is built with **Next.js 14** and **TypeScript** on the frontend and backend, **Supabase** for the database and authentication, **shadcn/ui** with **Tailwind CSS** for the interface, and the **Anthropic Claude API** for all AI features. Receipt scanning uses **Google Vision API**, and bank notification parsing uses the **Gmail API** via Google OAuth.
+fluvoo is built with **Next.js 14** and **TypeScript** on the frontend and backend, **Supabase** for the database and authentication, **shadcn/ui** with **Tailwind CSS** for the interface, and the **Anthropic Claude API** for all AI features. Receipt scanning uses **Google Vision API**, and bank notification parsing uses the **Gmail API** via Google OAuth.
 
 ---
 
@@ -51,8 +51,8 @@ You'll need Node.js 20+, a [Supabase](https://supabase.com) project, a [Google C
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/pesoflujo.git
-cd pesoflujo
+git clone https://github.com/your-username/fluvoo.git
+cd fluvoo
 
 # Install dependencies
 npm install
@@ -106,4 +106,4 @@ Contributions are welcome. Please open an issue before submitting a pull request
 
 ## License
 
-MIT © PesoFlujo
+MIT © fluvoo
